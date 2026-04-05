@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abiner Costa — Dev & Curiosidades</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Efeitos de fundo -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- ─── NAVEGAÇÃO ─── -->
+    <nav>
+      <a href="#" class="nav-logo">Abiner<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a
+        href="https://github.com/abinercosta-cl"
+        target="_blank"
+        class="nav-cta"
+        >GitHub ↗</a
+      >
+    </nav>
+
+    <div class="wrapper">
+      <!-- ─── HERO ─── -->
+      <section id="hero">
+        <div class="hero-tag">Desenvolvedor Backend · Santarém, PA</div>
+        <h1 class="hero-title">
+          <span class="line"><span>Código,</span></span>
+          <span class="line"><span class="glow">Curiosidade</span></span>
+          <span class="line"><span class="dim">&amp; Caos.</span></span>
+        </h1>
+        <p class="hero-desc">
+          Um lugar onde eu escrevo sobre tecnologia, compartilho curiosidades
+          estranhas do universo digital e mostro o que estou construindo — sem
+          filtro e sem enrolação.
+        </p>
+        <div class="hero-actions">
+          <a href="#blog" class="btn-primary">Ver Posts</a>
+          <a href="#about" class="btn-ghost">Quem sou eu</a>
+        </div>
+        <div class="hero-scroll">Scroll</div>
+      </section>
+
+      <!-- ─── SOBRE ─── -->
+      <section id="about">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="section-label">Sobre mim</div>
+            <h2 class="section-title">
+              Dev, curioso<br />e em constante <em>build</em>.
+            </h2>
+            <p>
+              Sou <strong>Abiner Costa</strong>, desenvolvedor backend de
+              Santarém, no Pará. Trabalho principalmente com
+              <strong>Go, TypeScript e Python</strong> — sempre em busca de
+              construir sistemas que resolvam problemas reais de forma
+              eficiente.
+            </p>
+            <p>
+              Atualmente estou desenvolvendo o <strong>EstoquePRO</strong>, um
+              sistema de PDV e gestão de estoque para negócios híbridos. Quando
+              não estou codando, estou explorando Linux, configurando meu Arch,
+              ou caindo em rabbit holes de tecnologia às 2h da manhã.
+            </p>
+            <p>
+              Este blog existe pra eu <strong>escrever o que aprendo</strong>,
+              compartilhar curiosidades que me fascinam, e deixar um rastro
+              digital de evolução como dev.
+            </p>
+            <div class="about-tags">
+              <span class="tag">Go</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Manjaro</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="about-card">
+              <div class="stat-grid">
+                <div class="stat-item">
+                  <div class="stat-number">21+</div>
+                  <div class="stat-label">Repositórios</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">229</div>
+                  <div class="stat-label">Commits / ano</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">4+</div>
+                  <div class="stat-label">Linguagens</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">∞</div>
+                  <div class="stat-label">Café ingerido</div>
+                </div>
+              </div>
+              <blockquote class="about-quote">
+                "Código limpo não é escrito por quem sabe regras — é escrito por
+                quem se importa com o próximo dev que vai ler isso."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── BLOG ─── -->
+      <section id="blog">
+        <div class="blog-header reveal">
+          <div>
+            <div class="section-label">Blog</div>
+            <h2 class="section-title">Últimos Posts</h2>
+          </div>
+          <a
+            href="#"
+            class="btn-ghost"
+            style="font-size: 0.78rem; padding: 0.65rem 1.4rem"
+            >Ver todos →</a
+          >
+        </div>
+
+        <div class="blog-grid">
+          <!-- POST DESTAQUE -->
+          <a href="#" class="post-card featured reveal">
+            <div class="post-card-img">
+              <div class="post-card-img-bg"></div>
+              <div class="post-icon">🔐</div>
+            </div>
+            <div class="post-card-body">
+              <div class="post-category">Segurança · Dev</div>
+              <h3 class="post-title">
+                Como eu migrei meu SaaS de localStorage para JWT com HTTP-Only
+                Cookies
+              </h3>
+              <p class="post-excerpt">
+                Minha aplicação tinha um problema sério: autenticação no
+                frontend com localStorage. Aqui está o passo a passo de como
+                resolvi isso de forma limpa usando jose e middleware no Next.js.
+              </p>
+              <div class="post-meta">
+                <span>Abr 2026</span>
+                <span class="post-meta-dot"></span>
+                <span>8 min de leitura</span>
+                <span class="post-meta-dot"></span>
+                <span>EstoquePRO</span>
+              </div>
+              <br />
+              <span class="post-read-more">Ler post →</span>
+            </div>
+          </a>
+
+          <!-- POST 2 -->
+          <a href="#" class="post-card reveal reveal-delay-1">
+            <div class="post-card-img" style="height: 160px">
+              <div
+                class="post-card-img-bg"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0f0020,
+                    rgba(30, 80, 20, 0.3)
+                  );
+                "
+              ></div>
+              <div class="post-icon" style="font-size: 3rem">🐹</div>
+            </div>
+            <div class="post-card-body">
+              <div class="post-category">Go · Backend</div>
+              <h3 class="post-title">
+                Por que Go é minha linguagem favorita para APIs REST
+              </h3>
+              <p class="post-excerpt">
+                Velocidade, simplicidade e concorrência nativa. Depois de usar
+                Python e Node.js por anos, Go mudou minha visão de como
+                construir backends.
+              </p>
+              <div class="post-meta">
+                <span>Mar 2026</span>
+                <span class="post-meta-dot"></span>
+                <span>5 min</span>
+              </div>
+              <br />
+              <span class="post-read-more">Ler →</span>
+            </div>
+          </a>
+
+          <!-- POST 3 -->
+          <a href="#" class="post-card reveal reveal-delay-2">
+            <div class="post-card-img" style="height: 160px">
+              <div
+                class="post-card-img-bg"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0f0020,
+                    rgba(80, 50, 0, 0.3)
+                  );
+                "
+              ></div>
+              <div class="post-icon" style="font-size: 3rem">🐧</div>
+            </div>
+            <div class="post-card-body">
+              <div class="post-category">Linux · Setup</div>
+              <h3 class="post-title">
+                Meu setup com Manjaro + Tmux + Termux no Android
+              </h3>
+              <p class="post-excerpt">
+                Como configurei meu ambiente de desenvolvimento para funcionar
+                em qualquer lugar, até pelo celular via SSH e DuckDNS.
+              </p>
+              <div class="post-meta">
+                <span>Fev 2026</span>
+                <span class="post-meta-dot"></span>
+                <span>6 min</span>
+              </div>
+              <br />
+              <span class="post-read-more">Ler →</span>
+            </div>
+          </a>
+
+          <!-- POST 4 -->
+          <a href="#" class="post-card reveal">
+            <div class="post-card-img" style="height: 160px">
+              <div
+                class="post-card-img-bg"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0f0020,
+                    rgba(80, 0, 80, 0.3)
+                  );
+                "
+              ></div>
+              <div class="post-icon" style="font-size: 3rem">🏪</div>
+            </div>
+            <div class="post-card-body">
+              <div class="post-category">SaaS · Produto</div>
+              <h3 class="post-title">
+                Construindo o EstoquePRO: um PDV feito do zero com Next.js
+              </h3>
+              <p class="post-excerpt">
+                A arquitetura, as decisões técnicas e os erros que cometi ao
+                construir um sistema de ponto de venda completo como side
+                project.
+              </p>
+              <div class="post-meta">
+                <span>Jan 2026</span>
+                <span class="post-meta-dot"></span>
+                <span>10 min</span>
+              </div>
+              <br />
+              <span class="post-read-more">Ler →</span>
+            </div>
+          </a>
+
+          <!-- POST 5 -->
+          <a href="#" class="post-card reveal reveal-delay-1">
+            <div class="post-card-img" style="height: 160px">
+              <div
+                class="post-card-img-bg"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0f0020,
+                    rgba(0, 40, 80, 0.3)
+                  );
+                "
+              ></div>
+              <div class="post-icon" style="font-size: 3rem">📡</div>
+            </div>
+            <div class="post-card-body">
+              <div class="post-category">Redes · Internet</div>
+              <h3 class="post-title">
+                O que é LOS signal loss? Como debuguei minha internet de fibra
+              </h3>
+              <p class="post-excerpt">
+                Um dia minha internet caiu com erro "LOS". Aqui está o que
+                aprendi sobre como funciona a fibra óptica e como diagnosticar
+                problemas na ONU.
+              </p>
+              <div class="post-meta">
+                <span>Dez 2025</span>
+                <span class="post-meta-dot"></span>
+                <span>4 min</span>
+              </div>
+              <br />
+              <span class="post-read-more">Ler →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ─── CURIOSIDADES ─── -->
+      <section id="curiosidades">
+        <div class="reveal">
+          <div class="section-label">Curiosidades</div>
+          <h2 class="section-title">
+            Fatos que me deixam<br />acordado à noite.
+          </h2>
+        </div>
+
+        <div class="curio-grid">
+          <div class="curio-card reveal">
+            <div class="curio-num">01</div>
+            <div class="curio-title">
+              O primeiro vírus de computador tinha 15 linhas de código
+            </div>
+            <p class="curio-text">
+              O "Creeper" de 1971 não causava dano — só exibia a mensagem "I'm
+              the creeper, catch me if you can!" e se movia entre máquinas da
+              ARPANET.
+            </p>
+            <div class="curio-source">// fonte: History of Computing</div>
+          </div>
+
+          <div class="curio-card reveal reveal-delay-1">
+            <div class="curio-num">02</div>
+            <div class="curio-title">O Git foi criado em 10 dias</div>
+            <p class="curio-text">
+              Linus Torvalds criou o Git em abril de 2005 após a briga com o
+              BitKeeper. Em menos de duas semanas, o kernel do Linux já estava
+              usando o novo sistema.
+            </p>
+            <div class="curio-source">// fonte: Linus Torvalds, 2005</div>
+          </div>
+
+          <div class="curio-card reveal reveal-delay-2">
+            <div class="curio-num">03</div>
+            <div class="curio-title">
+              Há mais código descartado do que em uso
+            </div>
+            <p class="curio-text">
+              Estima-se que para cada linha de código em produção, cerca de 3 a
+              5 foram escritas e deletadas durante o desenvolvimento. A maior
+              parte do trabalho é invisível.
+            </p>
+            <div class="curio-source">// fonte: The Pragmatic Programmer</div>
+          </div>
+
+          <div class="curio-card reveal">
+            <div class="curio-num">04</div>
+            <div class="curio-title">
+              A internet usa menos de 1% da capacidade das fibras instaladas
+            </div>
+            <p class="curio-text">
+              Durante o boom da internet nos anos 2000, foram instaladas muito
+              mais fibras do que o necessário. Hoje, a maioria permanece
+              "escura" — não utilizada.
+            </p>
+            <div class="curio-source">// fonte: IEEE Communications</div>
+          </div>
+
+          <div class="curio-card reveal reveal-delay-1">
+            <div class="curio-num">05</div>
+            <div class="curio-title">
+              NULL é responsável por bilhões em prejuízo
+            </div>
+            <p class="curio-text">
+              Tony Hoare, criador do null pointer em 1965, chamou isso de seu
+              "erro de um bilhão de dólares". Null reference exceptions ainda
+              causam a maior parte dos crashes em produção.
+            </p>
+            <div class="curio-source">// fonte: Tony Hoare, QCon 2009</div>
+          </div>
+
+          <div class="curio-card reveal reveal-delay-2">
+            <div class="curio-num">06</div>
+            <div class="curio-title">
+              O WiFi foi acidentalmente inventado por físicos estudando buracos
+              negros
+            </div>
+            <p class="curio-text">
+              John O'Sullivan, da CSIRO, usou técnicas matemáticas de rádio
+              telescópio para decodificar micro-ondas de mini buracos negros — e
+              acabou criando o algoritmo central do WiFi.
+            </p>
+            <div class="curio-source">// fonte: CSIRO History</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── CONTATO ─── -->
+      <section id="contato">
+        <div class="contact-inner reveal">
+          <div class="section-label">Contato</div>
+          <h2 class="section-title">Bora conversar.</h2>
+          <p>
+            Tem uma ideia, projeto ou só quer trocar uma ideia sobre tech? Me
+            manda uma mensagem. Geralmente respondo rápido.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:abinerclcosta@gmail.com" class="contact-link"
+              >✉ Email</a
+            >
+            <a
+              href="https://github.com/abinercosta-cl"
+              target="_blank"
+              class="contact-link"
+              >⌥ GitHub</a
+            >
+            <a
+              href="https://instagram.com/_abinerc"
+              target="_blank"
+              class="contact-link"
+              >◈ Instagram</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FOOTER ─── -->
+      <footer>
+        <a href="#" class="footer-logo">Abiner<span>.</span></a>
+        <span class="footer-copy"
+          >© 2026 — Feito com código e curiosidade em Santarém, PA.</span
+        >
+      </footer>
+    </div>
+    <!-- /wrapper -->
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

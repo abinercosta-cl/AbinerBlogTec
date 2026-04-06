@@ -42,25 +42,6 @@ const POSTS = [
     icon: "🐹",
     gradient: "linear-gradient(135deg, #0f0020, rgba(30, 80, 20, 0.3))",
     link: "javascript:void(0)"
-  },
-  {
-    id: 3,
-    featured: false,
-    category: "Linux · Setup",
-    title: "Meu setup com Manjaro + Tmux + Termux no Android",
-    excerpt: "Como configurei meu ambiente de desenvolvimento para funcionar em qualquer lugar, até pelo celular via SSH e DuckDNS.",
-    content: `
-      <div class="post-content">
-        <p>A liberdade de poder codar de qualquer lugar é o sonho de todo dev. Meu setup atual usa <strong>Manjaro</strong> como base e <strong>Tmux</strong> para gerenciar sessões persistentes.</p>
-        <h2>O Truque do Android</h2>
-        <p>Usando o <strong>Termux</strong> no Android, consigo me conectar via SSH ao meu PC em casa. Com o DuckDNS configurado, meu IP dinâmico não é um problema.</p>
-      </div>
-    `,
-    date: "Fev 2026",
-    readTime: "6 min",
-    icon: "🐧",
-    gradient: "linear-gradient(135deg, #0f0020, rgba(80, 50, 0, 0.3))",
-    link: "javascript:void(0)"
   }
 ];
 

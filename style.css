@@ -843,6 +843,90 @@ footer {
   transition-delay: 0.3s;
 }
 
+/* ─── 15. MODAL DE LEITURA ─── */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(7, 0, 15, 0.95);
+  backdrop-filter: blur(10px);
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: var(--card);
+  margin: auto;
+  padding: 4rem;
+  border: 1px solid var(--border);
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 0 80px rgba(109, 40, 217, 0.3);
+}
+
+.close-modal {
+  color: var(--muted);
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: var(--white);
+}
+
+#modal-body .post-category {
+  font-size: 0.8rem;
+}
+
+#modal-body .post-title {
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem;
+}
+
+#modal-body .post-content {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+#modal-body .post-content strong {
+  color: var(--purple3);
+}
+
+#modal-body .post-content h2 {
+  color: var(--white);
+  margin: 2.5rem 0 1rem;
+  font-family: 'Syne', sans-serif;
+}
+
+#modal-body .post-content code {
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.9em;
+  color: var(--purple3);
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 2rem;
+    width: 95%;
+  }
+}
+
 /* ─── 14. RESPONSIVO ─── */
 
 @media (max-width: 768px) {

@@ -1,8 +1,29 @@
 /* ─── DADOS DO BLOG ─── */
 const POSTS = [
   {
-    id: 1,
+    id: 3,
     featured: true,
+    category: "Arquitetura · SaaS",
+    title: "Do Zero ao SaaS White-Label: Escalando o EstoquePRO na Vercel",
+    excerpt: "A jornada para transformar um PDV em um SaaS de nível empresarial. Os 3 maiores desafios superados: Precisão Financeira extrema, Otimização Serverless e Arquitetura 'Camaleão'.",
+    content: `
+      <div class="post-content">
+        <p>A jornada para transformar um PDV em um SaaS de nível empresarial. O <strong>EstoquePRO</strong> nasceu para ser resiliente e escalável.</p>
+        <h2>Os 3 Maiores Desafios Superados</h2>
+        <p><strong>1. Precisão Financeira extrema:</strong> Migração para <code>Decimal(10,2)</code> no Prisma/Neon para evitar erros de ponto flutuante em cálculos de estoque e vendas.</p>
+        <p><strong>2. Otimização Serverless contra timeouts:</strong> Implementação de paginação paralela com <code>Promise.all</code> para lidar com grandes volumes de dados sem estourar os limites da Vercel.</p>
+        <p><strong>3. Arquitetura "Camaleão" (White-Label):</strong> Onde o mesmo código atende múltiplos clientes isolados apenas trocando variáveis de ambiente e configurações dinâmicas de tema.</p>
+      </div>
+    `,
+    date: "Abr 2026",
+    readTime: "12 min",
+    project: "EstoquePRO",
+    icon: "💎",
+    link: "javascript:void(0)"
+  },
+  {
+    id: 1,
+    featured: false,
     category: "Segurança · Dev",
     title: "Como eu migrei meu SaaS de localStorage para JWT com HTTP-Only Cookies",
     excerpt: "Minha aplicação tinha um problema sério: autenticação no frontend com localStorage. Aqui está o passo a passo de como resolvi isso de forma limpa usando jose e middleware no Next.js.",
